@@ -1,0 +1,215 @@
+.headerLogo {
+  width: 250px;
+}
+
+.hero {
+  position: relative;
+}
+
+.heroContent {
+  z-index: 3;
+  position: relative;
+}
+
+.heroBG {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.review1 {
+  position: absolute;
+  top: 0%;
+  left: 8%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardImg1 {
+  border-radius: 80%;
+  width: 5em;
+  height: 5rem;
+  object-fit: cover;
+  filter: drop-shadow(0 0 0.75rem #0860a4);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.cardImg1:hover {
+  scale: 120%;
+}
+
+.reviewLeft1 {
+  background-color: #0860a4;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  transform: translateY(40px);
+  opacity: 0;
+  transition-duration: 500ms;
+  z-index: 3;
+}
+
+.review2 {
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardImg2 {
+  border-radius: 80%;
+  width: 5em;
+  height: 5rem;
+  object-fit: cover;
+  filter: drop-shadow(0 0 0.75rem #0860a4);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.cardImg2:hover {
+  scale: 120%;
+}
+
+.reviewLeft2 {
+  background-color: #0860a4;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  transform: translateY(40px);
+  opacity: 0;
+  transition-duration: 500ms;
+  z-index: 3;
+}
+
+.review3 {
+  position: absolute;
+  bottom: 40%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+}
+
+.cardImg3 {
+  border-radius: 80%;
+  width: 5em;
+  height: 5rem;
+  object-fit: cover;
+  filter: drop-shadow(0 0 0.75rem #0860a4);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.cardImg3:hover {
+  scale: 120%;
+}
+
+.reviewRight {
+  background-color: #0860a4;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  transform: translateY(40px);
+  opacity: 0;
+  transition-duration: 500ms;
+  z-index: 3;
+}
+
+.primary {
+  background-color: #0860a4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.secondary {
+  background-color: #77b500;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.tertiary {
+  background-color: #f5f5f5;
+  color: Black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.services {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.services h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.serviceCol {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  padding-top: 20px;
+  transition-duration: 500ms;
+}
+
+.serviceCol1:hover,
+.serviceCol2:hover,
+.serviceCol3:hover,
+.serviceCol4:hover,
+.serviceCol5:hover,
+.serviceCol6:hover,
+.serviceCol7:hover,
+.serviceCol8:hover {
+  background-color: #77b500;
+}
+
+.serviceRow {
+  padding: 100px;
+}
+
+button.primary:hover {
+  background-color: #77b500;
+}
+
+button.secondary:hover {
+  background-color: #0860a4;
+}
+
+button.tertiary:hover {
+  background-color: white;
+}
+
+/* Media Queries */
+
+@media (max-width: 950px) {
+  .review2,
+  .review3 {
+    display: none;
+  }
+
+  .serviceCol h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .show {
+    z-index: 10;
+  }
+}
